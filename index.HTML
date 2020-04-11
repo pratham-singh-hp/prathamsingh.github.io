@@ -1,0 +1,141 @@
+<HTML>
+<head>
+<title>MY WEBPAGE</title>
+<STYLE>							/*all CSS properties goes here*/
+*{
+	margin:0;
+	padding:0;				
+	font-family:century gothic
+}
+
+header{
+	height:15%;
+	width: 100%;
+	background-size:cover;
+	background-position:center;
+	background:rgb(113,209,41);
+}
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color:white;
+	padding:5px 20px;
+	border:1px solid transparent;
+}
+ul li a:hover{
+	background-color:white;
+	color:black;
+	transition:0.6s ease;
+}
+.logo{
+
+
+}
+.logo img{
+	float:left;
+	width:200px;	
+	height:100px;
+}
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+ul li.active a{
+	background-color:#fff;
+	color:#000;
+}
+
+.title{
+
+	position:absolute;
+	top:35%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:43%;
+	width: 100%;
+	background-image: url(grey.jpg);
+}
+
+.title h1{
+	color:white;
+	font-size:35px;
+	text-align: center;
+	font-family:unset;
+	padding-top: 65px;
+}
+
+.button{
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+
+
+}
+.btn{
+	border:1px solid white;
+	padding:10px 30px;
+	color:white;
+	text-decoration:none;
+	transition:0.6s ease;
+}
+.btn:hover{
+	background-color:white;
+	color:black;
+	
+}
+.foot{
+	top:55%;
+	left:0%;
+	position:absolute;
+	height: 48%;
+	width: 100%; 
+	background: pink;
+}
+
+</STYLE>
+</head>
+<body>
+<header>
+<div class="main">
+<div class="logo">
+<img src="cc.png" alt="no image">
+
+
+
+<ul>
+<li class="active"><a href="1.html">Knowledge</a></li> 	<!--this will remian same for all pages-->
+<li><a href="catalog.html">Catalog</a></li>
+<li><a href="request.html">Request</a></li>
+<li><a href="system.html">System Status</a></li>
+<li><a href="carts.html">Carts</a></li>
+<li><a href="tours.html">Tours</a></li>
+</ul>
+</div>
+<div class="title">
+
+<h1>HOW CAN WE HELP?</h1>
+
+<div class="button"><table>
+	<tr><td>
+		<label for="s1">
+<input type="text" name="s1" value="How Can We help ?" size="85"></td>
+<td><img src="search.png" name="s1"></label></td>
+</tr> 
+</table>
+</div></div>
+<div class="foot">
+	<img src="down.png">
+</div>
+</div>
+</header>
+</body>
+</html>

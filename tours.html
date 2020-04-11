@@ -1,0 +1,118 @@
+<HTML>
+<head>
+<title>Tours</title>
+<STYLE> /* css properties*/
+*{
+	margin:0;
+	padding:0;
+	font-family:century gothic
+}
+
+header{
+	height:15%;
+	width: 100%;
+	background-size:cover;
+	background-position:center;
+	background:rgb(113,209,41);
+}
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color:white;
+	padding:5px 20px;
+	border:1px solid transparent;
+}
+ul li a:hover{
+	background-color:white;
+	color:black;
+	transition:0.6s ease;
+}
+.logo{
+
+
+}
+.logo img{
+	float:left;
+	width:200px;	
+	height:100px;
+}
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+ul li.active a{
+	background-color:#fff;
+	color:#000;
+}
+
+.form{
+	position:absolute;
+	top: 50%;
+	left: 48%;
+	transform: translate(-50%,-50%);
+			
+	
+		background:rgba(255,255,255, 0.6); 
+			
+}
+
+</STYLE>
+</head>
+<body background="grey.jpg">
+<header>
+<div class="main">
+<div class="logo">
+<img src="cc.png" alt="no image">
+
+
+
+<ul>
+<li ><a href="index.html">Knowledge</a></li>
+<li><a href="catalog.html">Catalog</a></li>
+<li><a href="request.html">Request</a></li>
+<li><a href="system.html">System Status</a></li>
+<li><a href="carts.html">Carts</a></li>
+<li  class="active"><a href="tours.html">Tours</a></li>
+</ul>
+</div>
+<div class="form">  
+<form action="#" method="GET" name="f1"> <!--creating form with get method---->
+	<fieldset>
+		<legend>PERSONAL DATA:</legend>>
+<label for="name" >USERNAME:</label><input type="text" name="username" id="name" required autofocus placeholder="YOUR NAME" pattern="[a-zA-Z]{3,}" title="please enter in more than three leter">
+
+ <label for="email" >EMAIL:</label> <input type="text" name="email" id="email" required autofocus placeholder="YOUR EMAIL"  >
+	
+<label for="phone">PHONE:</label><input type="tel" name="phone" id="name" required autofocus placeholder="ENTER YOUR PHONE NUMBER " pattern="[0-9]{4} [0-9]{3 0-9]{3}" title="please enter in a phone number">
+
+	</fieldset><BR>
+
+<fieldset>
+	<legend>BOOKING DETAILS:</legend>
+<label for="date">BOOKING DATE:</label><input id="date" type="date" name="date" min="1970-01-01">
+<label for="number of guest">NO OF GUESTS:</label><input id="numberOFguests" type="number" name="number of guest" min="1" max="6">
+<p>DO YOU REQUIRE MEALS?</p>
+<label for="yesmeals">YES:</label><input id="yesmeals"type="radio" name="meals" value="yesmeals">
+<label for="nomeals">NO:</label><input id="nomeals" type="radio" name="meals" value="nomeals">
+<br>
+
+<input type="image" src="image.png" height="50px" alt="OK" onclick="alert('Done')">
+
+</fieldset>
+		<!---notify the user with alert message after successfully filling of form--->
+
+
+</form>
+</div>
+</div>
+</header>
+</body>
+</html>
